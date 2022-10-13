@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2022", "DOM"],
+    "jsx": "react",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "out",
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "isolatedModules": true,
+    "rootDir": "."
+  },
+  "include": ["src", "test"]
+}
