@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
       const webviewRoot = vscode.Uri.file(path.join(__dirname, "webview"));
 
       const scriptUri = panel.webview.asWebviewUri(
-        vscode.Uri.joinPath(webviewRoot, "webview.js")
+        vscode.Uri.joinPath(webviewRoot, "test.js")
       );
 
       panel.webview.html = getHtml(
