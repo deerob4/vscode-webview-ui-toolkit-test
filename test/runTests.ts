@@ -1,4 +1,5 @@
 import * as path from "path";
+import * as os from "os";
 import { runTests, downloadAndUnzipVSCode } from "@vscode/test-electron";
 
 async function main() {
@@ -12,6 +13,7 @@ async function main() {
       vscodeExecutablePath,
       extensionDevelopmentPath,
       extensionTestsPath,
+      launchArgs: ["--user-data-dir", os.tmpdir()],
     });
   } catch (e) {
     console.error(e);
